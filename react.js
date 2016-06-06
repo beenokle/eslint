@@ -128,10 +128,12 @@ module.exports = {
     'react/sort-comp': [2, {
       'order': [
         'static-methods',
+        '/^state$/',
         'constructor',
         '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
         'everything-else',
         '/^on.+$/',
+        '/^handle.+$/',
         'lifecycle',
         '/^render.+$/',
         'render'
